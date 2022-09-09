@@ -1,9 +1,9 @@
 let express = require('express'),
     app     = express()
 
-let sql = require('./models/sales')
 
 
-app.listen(5500, ()=>{
-    console.log('Sales App is serving !!!')
+
+app.listen(5000, ()=>{
+    console.log('server is connected for sales-app')
 })    
