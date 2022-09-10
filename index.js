@@ -10,5 +10,5 @@ app.get('/', (req, res)=>{
 })
 
 app.listen(5000, ()=>{
-    console.log('server is connected for sales-app')
+    console.log('server is connected for sales-app navigator.geolocation')
 })    
