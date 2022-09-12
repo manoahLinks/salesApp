@@ -10,10 +10,12 @@
 </head>
 <body>
     <!-- Navabar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <!-- offcanvas trigger -->
-            <span class="navbar-toggler-icon me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></span>
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="offcanvasExample" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon me-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></span>
+            </button>    
             <!-- offcanvas trigger -->
           <a class="navbar-brand fw-bold text-uppercase me-auto" href="#">jjb-foods</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +77,7 @@
                         <hr class="dropdown-divider">
                     </li>
                     <li>
-                        <div class="text-muted small fw-bold text-uppercase px-3">Reports</div>
+                        <div class="text-muted small fw-bold text-uppercase px-3">Activity</div>
                     </li>
                     <li>
                         <a class="nav-link px-3 text-white sidebar-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -95,8 +97,126 @@
                             </span>
                         </a>
                         <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="card card-body bg-dark">
+                              <ul class="navbar-nav">
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">New Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View all transactions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View Booking list</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View User account</a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 text-white sidebar-link" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+                                    <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+                                </svg>
+                            </span>
+                            <span>
+                                Bank Transactions
+                            </span>
+                            <span class="right-icon ms-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </a>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body bg-dark">
+                              <ul class="navbar-nav">
+                                <li class="me-2">
+                                    <a href="#" class="nav-link fw-light text-white">view All bank account</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">Make deposit</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">Make withdrawal</a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 text-white sidebar-link" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+                                    <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+                                </svg>
+                            </span>
+                            <span>
+                                Customer Transactions
+                            </span>
+                            <span class="right-icon ms-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </a>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body bg-dark">
+                              <ul class="navbar-nav">
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">make Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">Deposit to user account</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View customer transaction history</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View User account</a>
+                                </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="nav-link px-3 text-white sidebar-link" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+                                    <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+                                    <path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+                                </svg>
+                            </span>
+                            <span>
+                                Expenses
+                            </span>
+                            <span class="right-icon ms-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                            </span>
+                        </a>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body bg-primary">
+                              <ul class="navbar-nav">
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">New Sale</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View all transactions</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View Booking list</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link fw-light text-white">View User account</a>
+                                </li>
+                              </ul>
                             </div>
                         </div>
                     </li>
@@ -104,8 +224,46 @@
             </nav>
         </div>
     </div>
+    <main class="mt-5 pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-7">
+                    <div class="card">
+                        <div class="card-body ">
+                            <small class="mt-2"><span class="fw-bold fs-2">Hi, Jones 🎉 </span><br>you have made 15% progress today, check the bages you unlocked</small><br>
+                            <button class="btn btn-outline-info btn-sm">View progress</button>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </main>
     <!-- offcanvas -->
+    <!-- <div class="container  col-lg-9 offset-lg-3 offset-xl-1.2 offset-md-0 offset-sm-0 mt-3">
         
+        <div class="row mt-3">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body ">
+                        <div class="card-title">
+                            sales
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body ">
+                        <div class="card-title">
+                            sales
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+         -->
     <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
