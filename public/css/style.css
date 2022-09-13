@@ -26,6 +26,14 @@
     main{
         margin-left: var(--offcanvas-width);
     }
+    .main1{
+        height: calc(100vh - var(--topNavbarHeight));
+        width: 75%;
+    }
+    .notificationCenter{
+        height: calc(100vh - var(--topNavbarHeight));
+        width: 25%;
+    }
     .sidebar-nav{
         transform: none;
         visibility: visible !important;
